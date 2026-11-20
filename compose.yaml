@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    volumes:
+      - ./database:/app/database
+    restart: unless-stopped
