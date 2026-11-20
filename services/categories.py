@@ -3,6 +3,7 @@ import sqlite3
 categories_id = []
 categories_dict = {}
 
+
 def get_categories() -> list:
     con = sqlite3.connect('database/crocodile.db')
     con.execute("PRAGMA foreign_keys = ON")
